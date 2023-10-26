@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Customer Survey Form</title>
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <div class="container">
+        <form id="surveyForm">
+            <div class="form-group side-by-side">
+                <div class="input-group">
+                    <label for="firstName"><i><b>First Name:</i></b></label>
+                    <input type="text" id="firstName" name="firstName" class="textbox" required>
+                </div>
+                <div class="input-group">
+                    <label for="lastName"><i><b>Last Name:</i></b></label>
+                    <input type="text" id="lastName" name="lastName" class="textbox" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob"><i><b>Date of Birth:</i></b></label>
+                <input type="date" id="dob" name="dob" class="textbox" required>
+            </div>
+
+            <div class="form-group">
+			
+                <label for="country"><i><b>Country:</i></b></label>
+                <select id="country" name="country" class="textbox" required>
+                    <option value="">Select Country</option>
+                    <option value="jp">Japan</option>
+                    <option value="in">India</option>
+                    <option value="ca">Canada</option>
+                    <option value="aus">Australia</option>
+                    <option value="uk">United Kingdom</option>
+                    
+                    
+                </select>
+            </div>
+            
+
+            <div class="form-group side-by-side"> 
+                <label><i><b>Gender:</i></b></label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="male" name="gender" value="male" >
+                    <label for="male"><b>Male</b></label>
+                    <input type="checkbox" id="female" name="gender" value="female" >
+                    <label for="female"><b>Female</b></label>
+                    <input type="checkbox" id="other" name="gender" value="other" >
+                    <label for="other"><b>Other</b></label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="profession"><i><b>Profession:</i></b></label>
+                <input type="text" id="profession" name="profession" class="textbox" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i><b>Email:</i></b></label>
+                <input type="email" id="email" name="email" class="textbox" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile"><i><b>Mobile Number:</i></b></label>
+                <input type="tel" id="mobile" name="mobile" class="textbox" required>
+            </div>
+
+            <div class="button-group">
+                <button class="glow-on-hover" type="submit">Submit</button>
+                <button class="glow-on-hover" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Survey Results</h2>
+            <p>Your submission has been received.</p>
+            <button class="glow-on-hover popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2018 Customer Survey Form. All Rights Reserved | Design by <span class="villain">Akash Mathur</span></p>
+    </div>
+</body>
+</html>
